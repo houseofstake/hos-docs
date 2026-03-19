@@ -83,19 +83,6 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 
   </Accordion>
 
-  <Accordion title="Why can't I manage my staking directly within the House of Stake dapp?" id="manage-staking-directly">
-    House of Stake's primary focus is to give NEAR token holders a way to gain voting power, earn rewards, and boost rewards with staking. When you stake your locked NEAR tokens, you are doing so through your lockup contract, which is custodying your funds.
-
-    If you'd like to further manage staked funds, you can use the lockup API methods to do so. The table below highlights the key API methods for managing your staked funds:
-
-    | Contract | API Method | Description |
-    |----------|-----------|-------------|
-    | Lockup contract | `deposit_and_stake` | Deposits funds that are in your lockup contract into the staking pool and stakes them. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L127C12-L127C29) |
-    | Lockup contract | `unstake` | Unstakes your funds from the staking pool. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L333) |
-    | Lockup contract | `withdraw_from_staking_pool` | Withdraws all available funds from the staking pool. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L213) |
-    | Lockup contract | `refresh_staking_pool_balance` | Retrieves total liquid balance from the staking pool and updates the internal state of the lockup contract. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L175C12-L175C40) |
-
-  </Accordion>
 
   <Accordion title="Why do I need to unstake my liNEAR and stNEAR to withdraw?" id="fungible-token-withdrawal">
     In the current House of Stake contracts, users can deposit liNEAR or stNEAR into the lockup contract, but the design does not support direct transfers of these tokens out of the contract. Instead, users must unstake the tokens back to native NEAR before withdrawal as a workaround. This stems from an initial focus on staking functionality rather than full transferability, with fungible token transfers complicated by pricing dependencies not denominated in NEAR. The lockup contract is non-upgradable, making this behavior fixed for the lifetime of the V1 lockup contract. This will be addressed in a future version of House of Stake.
@@ -237,7 +224,7 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
     title="Why have veNEAR rewards been discontinued?"
     id="venear-rewards-discontinued"
   >
-    The veNEAR rewards campaign has officially wrapped up. For more details on the discontinuation, please view the [forum post](https://gov.near.org/t/venear-rewards-wrapping-up/42940).
+    The veNEAR rewards campaign was a limited-time program to recognize early governance participants. The program has concluded. If you earned rewards, you have 90 days from your lock date to claim them. For more details, see the [forum announcement](https://gov.near.org/t/hsp-003-venear-holder-rewards-program/41688). Staking rewards (yields from your staking pool) are unaffected and continue as normal.
   </Accordion>
 </Accordions>
 
