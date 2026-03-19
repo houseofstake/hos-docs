@@ -1,0 +1,241 @@
+---
+title: FAQs
+---
+
+import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
+
+<Accordions type="single">
+  <Accordion title="What wallets are supported?" id="supported-wallets">
+    House of Stake supports the most common NEAR wallets, including:
+
+    - MyNearWallet
+    - HERE Wallet
+    - Meteor Wallet
+    - Sender Wallet
+    - Nightly Wallet
+    - Ledger (via supported wallet integrations)
+    - Fireblocks vaults (see special instructions below)
+
+    To get started, go to [gov.houseofstake.org/proposals](/proposals), connect your wallet, and select your preferred wallet provider.
+
+    Once your wallet is connected, you are ready to:
+
+    - [Lock NEAR for veNEAR](/delegates)
+    - [Accumulate voting power](https://houseofstake.org/docs/governance-system/what-is-venear/)
+    - [Participate in governance](https://houseofstake.org/docs/overview/what-is-house-of-stake)
+    - [Earn veNEAR rewards](/assets)
+
+  </Accordion>
+
+  <Accordion title="How do I use Fireblocks vaults?" id="fireblocks-vaults">
+    If you are using a Fireblocks vault, please note the following:
+
+    - To connect to the House of Stake contracts, your Fireblocks workspace [must allow typed messages](https://support.fireblocks.io/hc/en-us/articles/19158869149596-Policies-for-EVM-DeFi-operations#h_01JQ1MDMDGZY9C831P67762GCQ).
+    - Make sure you have configured an [appropriate policy in your Fireblocks Console](https://console.fireblocks.io/v2/policies/typed_message).
+
+    If you would like to become a delegate using a Fireblocks vault, note that delegate statements are not supported for Fireblocks vaults.
+
+    You can:
+    - Vote as a delegate without publishing a statement, or
+    - [Delegate your voting power to a regular wallet that has a delegate statement set up](/delegates).
+
+    In case you need support, please reach out to House of Stake [on Telegram](https://t.me/NEAR_HouseOfStake) or [on X](https://x.com/NEARGovernance).
+
+  </Accordion>
+  <Accordion title="What is NEAR House of Stake governance?" id="what-is-near-governance">
+    NEAR House of Stake governance is a decentralized governance system that empowers token holders to lock NEAR for voting rights, delegate votes to trusted representatives, and earn rewards for active participation. It enables the community to collectively make decisions about the protocol's future.
+  </Accordion>
+
+  <Accordion title="How does onboarding to NEAR House of Stake work at the contract level?" id="contract-level-onboarding">
+    Onboarding to House of Stake involves a few different contract operations and transfers:
+
+    **1. Make a deposit to the veNEAR contract**
+    The user sends a small amount of NEAR to the veNEAR contract to cover storage costs and enable participation.
+
+    **2. Deploy a personal lockup contract**
+    The user requests the veNEAR contract to create their own lockup contract and pays the storage and deployment fees.
+
+    **3. Fund your lockup contract**
+    The user transfers NEAR, or any other supported tokens, from their wallet into their personal lockup contract.
+
+    **4. Choose a staking service**
+    The user selects which staking pool (like Meta Pool or liNEAR) to stake with.
+
+    **5. Lock your NEAR tokens**
+    The user locks the tokens inside the lockup contract to receive voting power.
+
+    **6. (Optional) Stake your tokens**
+    The user may choose to stake their locked tokens to earn staking rewards while participating in governance.
+
+  </Accordion>
+
+  <Accordion title="Why are liNEAR and Meta Pool the only supported staking pools for House of Stake?" id="staking-pools-whitelist">
+    The goal of House of Stake is to make onboarding as seamless as possible. Liquid staking tokens, such as liNEAR and stNEAR, allow users to instantly transfer and lock tokens for voting power, without any disruption to your staking rewards.
+
+    With that being said, House of Stake contracts support any staking pool that's whitelisted. Refer to the table below for the key contract APIs you'll need to interact with.
+
+    | Contract | API Method | Description |
+    |----------|-----------|-------------|
+    | veNEAR contract | `get_config` | Returns the veNEAR config, including the `staking_pool_whitelist_account_id`. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/venear-contract/src/config.rs#L46) |
+    | Lockup contract | `select_staking_pool` | Allows you to set your preferred staking pool. Note that if you've already selected a staking pool such as liNEAR or stNEAR you'll need to unset your existing staking pool. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L15) |
+    | Lockup contract | `unselect_staking_pool` | Allows you to unset your current staking pool. Note you can only unset your staking pool if the amount deposited in that pool is 0. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L47) |
+
+    > If you have a preferred staking pool that is not currently whitelisted, create a proposal and suggest which staking pools should be added.
+
+  </Accordion>
+
+  <Accordion title="Why can't I manage my staking directly within the House of Stake dapp?" id="manage-staking-directly">
+    House of Stake's primary focus is to give NEAR token holders a way to gain voting power, earn rewards, and boost rewards with staking. When you stake your locked NEAR tokens, you are doing so through your lockup contract, which is custodying your funds.
+
+    If you'd like to further manage staked funds, you can use the lockup API methods to do so. The table below highlights the key API methods for managing your staked funds:
+
+    | Contract | API Method | Description |
+    |----------|-----------|-------------|
+    | Lockup contract | `deposit_and_stake` | Deposits funds that are in your lockup contract into the staking pool and stakes them. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L127C12-L127C29) |
+    | Lockup contract | `unstake` | Unstakes your funds from the staking pool. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L333) |
+    | Lockup contract | `withdraw_from_staking_pool` | Withdraws all available funds from the staking pool. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L213) |
+    | Lockup contract | `refresh_staking_pool_balance` | Retrieves total liquid balance from the staking pool and updates the internal state of the lockup contract. [View on GitHub](https://github.com/fastnear/house-of-stake-contracts/blob/main/lockup-contract/src/owner.rs#L175C12-L175C40) |
+
+  </Accordion>
+
+  <Accordion title="Why do I need to unstake my liNEAR and stNEAR to withdraw?" id="fungible-token-withdrawal">
+    In the current House of Stake contracts, users can deposit liNEAR or stNEAR into the lockup contract, but the design does not support direct transfers of these tokens out of the contract. Instead, users must unstake the tokens back to native NEAR before withdrawal as a workaround. This stems from an initial focus on staking functionality rather than full transferability, with fungible token transfers complicated by pricing dependencies not denominated in NEAR. The lockup contract is non-upgradable, making this behavior fixed for the lifetime of the V1 lockup contract. This will be addressed in a future version of House of Stake.
+
+    See the wiki [here](https://github.com/voteagora/agora-near/wiki/How-To:-Withdrawing-NEAR-after-transferring-LST-to-Lockup-Contract) for more information.
+
+  </Accordion>
+
+<Accordion
+  title="How can I participate in NEAR governance?"
+  id="how-to-participate"
+>
+  You can participate by locking your NEAR tokens to gain voting power,
+  delegating your voting power to trusted delegates who align with your values,
+  or becoming a delegate yourself. All participants earn rewards for their
+  active involvement in the governance process.
+</Accordion>
+
+<Accordion
+  title="What are delegates and why are they important?"
+  id="what-are-delegates"
+>
+  Delegates are community members who have been entrusted with voting power by
+  token holders. They actively participate in governance by voting on proposals,
+  engaging in discussions, and representing the interests of those who delegated
+  to them. Delegates play a crucial role in ensuring informed decision-making.
+</Accordion>
+
+<Accordion title="How is voting power calculated?" id="voting-power">
+  Voting power is determined by the amount of NEAR tokens you have locked in the
+  governance contract. The more NEAR you lock, the more voting power you have.
+  You can either use this voting power directly or delegate it to others while
+  still maintaining ownership of your tokens.
+</Accordion>
+
+<Accordion title="What are the quorum requirements?" id="quorum-requirements">
+  In House of Stake v1.5, the quorum requirement will be enforced onchain. For
+  more information on quorum specifications, see the governance system
+  documentation.
+</Accordion>
+
+<Accordion title="What is the token locking period?" id="locking-period">
+  When you lock NEAR tokens for governance, they are locked for a specific
+  period. During this time, you cannot transfer or use these tokens for other
+  purposes, but you maintain voting rights and earn rewards. The locking period
+  helps ensure long-term alignment with the protocol's success.
+</Accordion>
+
+<Accordion
+  title="Should I delegate or vote directly?"
+  id="delegation-vs-direct-voting"
+>
+  The choice depends on your level of engagement and expertise. If you have the
+  time and knowledge to research proposals thoroughly, direct voting gives you
+  full control. If you prefer to entrust your voting power to someone who
+  actively participates in governance, delegation is a great option.
+</Accordion>
+
+<Accordion
+  title="How to interact with the underlying staking pool through the lockup contracts?"
+  id="staking-unstaking-cli"
+>
+  We put together a guide on how to interact with the underlying staking pool
+  through the lockup contracts: [Lock and Stake with a Custom Staking
+  Pool](https://github.com/voteagora/agora-near/wiki/How-to:-Lock-and-Stake-with-a-Custom-Staking-Pool)
+</Accordion>
+
+  <Accordion title="What are Non-Liquid Staking Pools and how do I bring them into House of Stake?" id="non-liquid-staking-pools">
+    Non-Liquid Staking Pools are traditional NEAR staking pools that don't provide liquid staking tokens (like liNEAR or stNEAR). If you have NEAR staked with one of these pools, you can still participate in House of Stake governance by bringing those staked tokens into the system.
+
+    House of Stake now supports whitelisted Non-Liquid Staking Pools, allowing you to stake directly with any pool on the whitelist rather than only the liquid staking providers. This is useful if you:
+
+    - Already have tokens staked with a specific validator
+    - Prefer a particular staking pool for your own reasons
+    - Want to support a specific validator while participating in governance
+
+    **How the Staking Pool Whitelist Works**
+
+    House of Stake uses a whitelist contract to control which staking pools can be used with lockup contracts. This security measure ensures that only trusted, verified staking pools can receive delegated funds. When you select a staking pool, the lockup contract verifies the pool is whitelisted before allowing the selection.
+
+    The whitelist contract address is configured in the veNEAR contract and can be viewed via the `staking_pool_whitelist_account_id` field in the `get_config` response. The whitelist is governed by House of Stake, and new pools can be added through the governance proposal process.
+
+    When you enter a pool account ID in the UI, the system automatically checks the whitelist to verify the pool is allowed. If a pool is not whitelisted, you will see an error message and won't be able to select it.
+
+    **How to Stake with Non-Liquid Pools**
+
+    Use the [Non-Liquid Staking Pools page](/assets/non-liquid-staking) to manage your positions.
+
+    **Option A: Migrating from an External Wallet**
+
+    If your tokens are currently staked in your personal wallet (e.g., MyNearWallet, Meteor), you cannot transfer the stake directly. You must:
+
+    1. Unstake your tokens using your current wallet interface.
+    2. Wait for the release period (typically 2-3 days).
+    3. Withdraw the tokens to your wallet balance.
+    4. Deposit the liquid NEAR into your House of Stake lockup.
+    5. Select your desired Non-Liquid Staking Pool and stake.
+
+    **Option B: Switching Pools within House of Stake**
+
+    If you already have funds in your House of Stake lockup and want to switch pools:
+
+    1. **Unstake from your current pool** - Use the Staking dialog's Advanced section to unstake all tokens from your current pool.
+    2. **Wait for cooldown** - After unstaking, wait for the pool's cooldown period (typically 2-3 epochs) before you can withdraw.
+    3. **Withdraw to your lockup** - Once cooldown is complete, use Advanced → Withdraw all to bring tokens back to your lockup contract.
+    4. **Refresh your balance** - Click Refresh balance to sync your lockup and surface any available rewards or withdrawal balance.
+    5. **Unselect the old pool** - When your deposited amount in the pool is 0, use Advanced → Unselect staking pool to clear your pool selection.
+    6. **Select your preferred pool** - Use the Staking dialog to select a new pool. You can choose any whitelisted pool, including Non-Liquid Staking Pools.
+
+    > If you have a preferred staking pool that is not currently whitelisted, you can create a governance proposal to request its addition to the whitelist.
+
+  </Accordion>
+
+<Accordion
+  title="Why can't I lock more than one LST position?"
+  id="only-one-lst-position"
+>
+  The current contract architecture only allows one LST position to be locked at
+  a time. Concurrent locking of multiple LSTs is not supported in House of Stake
+  V1. When you lock NEAR tokens for governance, they are locked for a specific
+  period. During this time, you cannot transfer or use these tokens for other
+  purposes, but you maintain voting rights and earn rewards. The locking period
+  helps ensure long-term alignment with the protocol's success.
+</Accordion>
+
+<Accordion
+  title="How do I unstake from the alpha contracts?"
+  id="proposal-alpha-unstake"
+>
+  You can use a
+  [CLI](https://github.com/voteagora/agora-near/wiki/How-to:-Unlock-NEAR-in-veNEAR-Alpha-Contracts),
+  or there is a [Web UI](https://unlock.houseofstake.dev/).
+</Accordion>
+
+  <Accordion title="What happens when I delegate veNEAR to a delegator?" id="delegate-venear-consequences">
+    Your veNEAR is burned, and new veNEAR is minted for the delegate. Your locked NEAR balance remains unchanged within the lockup contract. Your reward calculation is unaffected; delegating does not change the amount of rewards you receive. You can undelegate your veNEAR at any time.
+  </Accordion>
+</Accordions>
+
+---
+
+Have more questions? Join the discussion on our [Governance Forum](https://gov.near.org/) or [Discord](https://discord.gg/nearprotocol).
