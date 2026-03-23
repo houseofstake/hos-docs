@@ -8,13 +8,16 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   <Accordion title="What wallets are supported?" id="supported-wallets">
     House of Stake supports the most common NEAR wallets, including:
 
+    - HOT Wallet
     - MyNearWallet
-    - HERE Wallet
     - Meteor Wallet
-    - Sender Wallet
+    - Intear Wallet
+    - OKX Wallet
+    - NEAR Mobile
     - Nightly Wallet
     - Ledger (via supported wallet integrations)
     - Fireblocks vaults (see special instructions below)
+    - Unity Wallet
 
     To get started, go to [gov.houseofstake.org/proposals](https://gov.houseofstake.org/proposals), connect your wallet, and select your preferred wallet provider.
 
@@ -23,7 +26,6 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
     - [Lock NEAR for veNEAR](https://gov.houseofstake.org/delegates)
     - [Accumulate voting power](https://houseofstake.org/docs/governance-system/what-is-venear/)
     - [Participate in governance](https://houseofstake.org/docs/overview/what-is-house-of-stake)
-    - [Earn veNEAR rewards](https://gov.houseofstake.org/assets)
 
   </Accordion>
 
@@ -42,9 +44,16 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
     In case you need support, please reach out to House of Stake [on Telegram](https://t.me/NEAR_HouseOfStake) or [on X](https://x.com/NEARGovernance).
 
   </Accordion>
-  <Accordion title="What is NEAR House of Stake governance?" id="what-is-near-governance">
-    NEAR House of Stake governance is a decentralized governance system that empowers token holders to lock NEAR for voting rights, delegate votes to trusted representatives, and earn rewards for active participation. It enables the community to collectively make decisions about the protocol's future.
-  </Accordion>
+
+<Accordion
+  title="What is NEAR House of Stake governance?"
+  id="what-is-near-governance"
+>
+  NEAR House of Stake governance is a decentralized governance system that
+  empowers token holders to lock NEAR for voting rights, and delegate votes to
+  trusted representatives. It enables the community to collectively make
+  decisions about the protocol's future.
+</Accordion>
 
   <Accordion title="How does onboarding to NEAR House of Stake work at the contract level?" id="contract-level-onboarding">
     Onboarding to House of Stake involves a few different contract operations and transfers:
@@ -70,9 +79,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   </Accordion>
 
   <Accordion title="Why are liNEAR and Meta Pool the only supported staking pools for House of Stake?" id="staking-pools-whitelist">
-    The goal of House of Stake is to make onboarding as seamless as possible. Liquid staking tokens, such as liNEAR and stNEAR, allow users to instantly transfer and lock tokens for voting power, without any disruption to your staking rewards.
+    The goal of House of Stake is to make onboarding as seamless as possible. Liquid staking tokens, such as liNEAR, rNEAR and stNEAR, allow users to instantly transfer and lock tokens for voting power, without any disruption to your staking rewards.
 
-    With that being said, House of Stake contracts support any staking pool that's whitelisted. Refer to the table below for the key contract APIs you'll need to interact with.
+    With that being said, House of Stake contracts support any staking pool that's whitelisted. You can stake with any whitelisted validator pool directly through the interface without issues. Note that liNEAR and Meta Pool are recommended options for simplicity. Refer to the table below for the key contract APIs you'll need to interact with.
 
     | Contract | API Method | Description |
     |----------|-----------|-------------|
@@ -98,8 +107,8 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 
   </Accordion>
 
-  <Accordion title="Why do I need to unstake my liNEAR and stNEAR to withdraw?" id="fungible-token-withdrawal">
-    In the current House of Stake contracts, users can deposit liNEAR or stNEAR into the lockup contract, but the design does not support direct transfers of these tokens out of the contract. Instead, users must unstake the tokens back to native NEAR before withdrawal as a workaround. This stems from an initial focus on staking functionality rather than full transferability, with fungible token transfers complicated by pricing dependencies not denominated in NEAR. The lockup contract is non-upgradable, making this behavior fixed for the lifetime of the V1 lockup contract. This will be addressed in a future version of House of Stake.
+  <Accordion title="Why do I need to unstake my liNEAR, rNEAR and stNEAR to withdraw?" id="fungible-token-withdrawal">
+    In the current House of Stake contracts, users can deposit liNEAR, rNEAR or stNEAR into the lockup contract, but the design does not support direct transfers of these tokens out of the contract. Instead, users must unstake the tokens back to native NEAR before withdrawal as a workaround. This stems from an initial focus on staking functionality rather than full transferability, with fungible token transfers complicated by pricing dependencies not denominated in NEAR. The lockup contract is non-upgradable, making this behavior fixed for the lifetime of the V1 lockup contract. This will be addressed in a future version of House of Stake.
 
     See the wiki [here](https://github.com/voteagora/agora-near/wiki/How-To:-Withdrawing-NEAR-after-transferring-LST-to-Lockup-Contract) for more information.
 
@@ -111,8 +120,7 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 >
   You can participate by locking your NEAR tokens to gain voting power,
   delegating your voting power to trusted delegates who align with your values,
-  or becoming a delegate yourself. All participants earn rewards for their
-  active involvement in the governance process.
+  or becoming a delegate yourself.
 </Accordion>
 
 <Accordion
@@ -128,8 +136,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 <Accordion title="How is voting power calculated?" id="voting-power">
   Voting power is determined by the amount of NEAR tokens you have locked in the
   governance contract. The more NEAR you lock, the more voting power you have.
-  You can either use this voting power directly or delegate it to others while
-  still maintaining ownership of your tokens.
+  Furthermore, voting power increases over time as long as you do not unstake
+  your NEAR from House of Stake. You can either use this voting power directly
+  or delegate it to others while still maintaining ownership of your tokens.
 </Accordion>
 
 <Accordion title="What are the quorum requirements?" id="quorum-requirements">
@@ -141,8 +150,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 <Accordion title="What is the token locking period?" id="locking-period">
   When you lock NEAR tokens for governance, they are locked for a specific
   period. During this time, you cannot transfer or use these tokens for other
-  purposes, but you maintain voting rights and earn rewards. The locking period
-  helps ensure long-term alignment with the protocol's success.
+  purposes, but you maintain voting rights. Unlocking tokens will decrease your
+  voting power. Unlocking takes 45 days. The locking period helps ensure
+  long-term alignment with the protocol's success.
 </Accordion>
 
 <Accordion
@@ -159,9 +169,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   title="How to interact with the underlying staking pool through the lockup contracts?"
   id="staking-unstaking-cli"
 >
-  We put together a guide on how to interact with the underlying staking pool
-  through the lockup contracts: [Lock and Stake with a Custom Staking
-  Pool](https://github.com/voteagora/agora-near/wiki/How-to:-Lock-and-Stake-with-a-Custom-Staking-Pool)
+  You can stake through a custom pool directly on the website interface. Once
+  you deposit NEAR into your lockup, you can select any whitelisted staking pool
+  from the Staking dialog.
 </Accordion>
 
   <Accordion title="What are Non-Liquid Staking Pools and how do I bring them into House of Stake?" id="non-liquid-staking-pools">
@@ -218,8 +228,8 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   a time. Concurrent locking of multiple LSTs is not supported in House of Stake
   V1. When you lock NEAR tokens for governance, they are locked for a specific
   period. During this time, you cannot transfer or use these tokens for other
-  purposes, but you maintain voting rights and earn rewards. The locking period
-  helps ensure long-term alignment with the protocol's success.
+  purposes, but you maintain voting rights. The locking period helps ensure
+  long-term alignment with the protocol's success.
 </Accordion>
 
 <Accordion
@@ -231,8 +241,46 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   or there is a [Web UI](https://unlock.houseofstake.dev/).
 </Accordion>
 
-  <Accordion title="What happens when I delegate veNEAR to a delegator?" id="delegate-venear-consequences">
-    Your veNEAR is burned, and new veNEAR is minted for the delegate. Your locked NEAR balance remains unchanged within the lockup contract. Your reward calculation is unaffected; delegating does not change the amount of rewards you receive. You can undelegate your veNEAR at any time.
+<Accordion
+  title="What happens when I delegate veNEAR to a delegator?"
+  id="delegate-venear-consequences"
+>
+  Your veNEAR is burned, and new veNEAR is minted for the delegate. Your locked
+  NEAR balance remains unchanged within the lockup contract. You can undelegate
+  your veNEAR at any time.
+</Accordion>
+
+<Accordion
+  title="Can I withdraw my NEAR immediately after unlocking veNEAR?"
+  id="withdraw-immediately-after-unlock"
+>
+  No. Once you unlock veNEAR, there is a 45-day cooldown period. After the
+  cooldown ends, you can withdraw your underlying NEAR.
+</Accordion>
+
+<Accordion
+  title="Why have veNEAR rewards been discontinued?"
+  id="venear-rewards-discontinued"
+>
+  The veNEAR rewards campaign was a limited-time program to recognize early
+  governance participants. The program has concluded. If you earned rewards, you
+  have 90 days from your lock date to claim them. For more details, see the
+  [forum
+  announcement](https://gov.near.org/t/hsp-003-venear-holder-rewards-program/41688).
+  Staking rewards (yields from your staking pool) are unaffected and continue as
+  normal.
+</Accordion>
+
+  <Accordion title="Can I unlock but keep my NEAR staked during the 45 days?" id="unlock-but-keep-staked">
+    Yes, you can start the unlock and keep your tokens staked during the 45 days. The unlock timer and staking are independent from each other.
+
+    1. Start the unlock now - 45-day timer begins
+    2. Your tokens stay staked and earn rewards during this time
+    3. Towards the end of the 45 days - unstake from the pool (2-3 days cooldown)
+    4. Withdraw to your lockup, then to your wallet
+
+    Unstaking at the end won't trigger another 45-day lock. The locking period and the unstaking period are separate things.
+
   </Accordion>
 </Accordions>
 
