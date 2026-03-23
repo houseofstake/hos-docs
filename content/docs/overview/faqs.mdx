@@ -15,7 +15,8 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
     - OKX Wallet
     - NEAR Mobile
     - Nightly Wallet
-    - Wallet Connect
+    - Ledger (via supported wallet integrations)
+    - Fireblocks vaults (see special instructions below)
     - Unity Wallet
 
     To get started, go to [gov.houseofstake.org/proposals](https://gov.houseofstake.org/proposals), connect your wallet, and select your preferred wallet provider.
@@ -28,10 +29,31 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 
   </Accordion>
 
+  <Accordion title="How do I use Fireblocks vaults?" id="fireblocks-vaults">
+    If you are using a Fireblocks vault, please note the following:
 
-  <Accordion title="What is NEAR House of Stake governance?" id="what-is-near-governance">
-    NEAR House of Stake governance is a decentralized governance system that empowers token holders to lock NEAR for voting rights, and delegate votes to trusted representatives. It enables the community to collectively make decisions about the protocol's future.
+    - To connect to the House of Stake contracts, your Fireblocks workspace [must allow typed messages](https://support.fireblocks.io/hc/en-us/articles/19158869149596-Policies-for-EVM-DeFi-operations#h_01JQ1MDMDGZY9C831P67762GCQ).
+    - Make sure you have configured an [appropriate policy in your Fireblocks Console](https://console.fireblocks.io/v2/policies/typed_message).
+
+    If you would like to become a delegate using a Fireblocks vault, note that delegate statements are not supported for Fireblocks vaults.
+
+    You can:
+    - Vote as a delegate without publishing a statement, or
+    - [Delegate your voting power to a regular wallet that has a delegate statement set up](https://gov.houseofstake.org/delegates).
+
+    In case you need support, please reach out to House of Stake [on Telegram](https://t.me/NEAR_HouseOfStake) or [on X](https://x.com/NEARGovernance).
+
   </Accordion>
+
+<Accordion
+  title="What is NEAR House of Stake governance?"
+  id="what-is-near-governance"
+>
+  NEAR House of Stake governance is a decentralized governance system that
+  empowers token holders to lock NEAR for voting rights, and delegate votes to
+  trusted representatives. It enables the community to collectively make
+  decisions about the protocol's future.
+</Accordion>
 
   <Accordion title="How does onboarding to NEAR House of Stake work at the contract level?" id="contract-level-onboarding">
     Onboarding to House of Stake involves a few different contract operations and transfers:
@@ -114,9 +136,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 <Accordion title="How is voting power calculated?" id="voting-power">
   Voting power is determined by the amount of NEAR tokens you have locked in the
   governance contract. The more NEAR you lock, the more voting power you have.
-  Furthermore, voting power increases over time as long as you do not unstake your NEAR from House of Stake.
-  You can either use this voting power directly or delegate it to others while
-  still maintaining ownership of your tokens.
+  Furthermore, voting power increases over time as long as you do not unstake
+  your NEAR from House of Stake. You can either use this voting power directly
+  or delegate it to others while still maintaining ownership of your tokens.
 </Accordion>
 
 <Accordion title="What are the quorum requirements?" id="quorum-requirements">
@@ -128,8 +150,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 <Accordion title="What is the token locking period?" id="locking-period">
   When you lock NEAR tokens for governance, they are locked for a specific
   period. During this time, you cannot transfer or use these tokens for other
-  purposes, but you maintain voting rights. Unlocking tokens will decrease your voting power. Unlocking takes 45 days. The locking period
-  helps ensure long-term alignment with the protocol's success.
+  purposes, but you maintain voting rights. Unlocking tokens will decrease your
+  voting power. Unlocking takes 45 days. The locking period helps ensure
+  long-term alignment with the protocol's success.
 </Accordion>
 
 <Accordion
@@ -146,7 +169,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   title="How to interact with the underlying staking pool through the lockup contracts?"
   id="staking-unstaking-cli"
 >
-  You can stake through a custom pool directly on the website interface. Once you deposit NEAR into your lockup, you can select any whitelisted staking pool from the Staking dialog.
+  You can stake through a custom pool directly on the website interface. Once
+  you deposit NEAR into your lockup, you can select any whitelisted staking pool
+  from the Staking dialog.
 </Accordion>
 
   <Accordion title="What are Non-Liquid Staking Pools and how do I bring them into House of Stake?" id="non-liquid-staking-pools">
@@ -203,8 +228,8 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   a time. Concurrent locking of multiple LSTs is not supported in House of Stake
   V1. When you lock NEAR tokens for governance, they are locked for a specific
   period. During this time, you cannot transfer or use these tokens for other
-  purposes, but you maintain voting rights. The locking period
-  helps ensure long-term alignment with the protocol's success.
+  purposes, but you maintain voting rights. The locking period helps ensure
+  long-term alignment with the protocol's success.
 </Accordion>
 
 <Accordion
@@ -216,17 +241,35 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
   or there is a [Web UI](https://unlock.houseofstake.dev/).
 </Accordion>
 
-  <Accordion title="What happens when I delegate veNEAR to a delegator?" id="delegate-venear-consequences">
-    Your veNEAR is burned, and new veNEAR is minted for the delegate. Your locked NEAR balance remains unchanged within the lockup contract. You can undelegate your veNEAR at any time.
-  </Accordion>
+<Accordion
+  title="What happens when I delegate veNEAR to a delegator?"
+  id="delegate-venear-consequences"
+>
+  Your veNEAR is burned, and new veNEAR is minted for the delegate. Your locked
+  NEAR balance remains unchanged within the lockup contract. You can undelegate
+  your veNEAR at any time.
+</Accordion>
 
-  <Accordion title="Can I withdraw my NEAR immediately after unlocking veNEAR?" id="withdraw-immediately-after-unlock">
-    No. Once you unlock veNEAR, there is a 45-day cooldown period. After the cooldown ends, you can withdraw your underlying NEAR.
-  </Accordion>
+<Accordion
+  title="Can I withdraw my NEAR immediately after unlocking veNEAR?"
+  id="withdraw-immediately-after-unlock"
+>
+  No. Once you unlock veNEAR, there is a 45-day cooldown period. After the
+  cooldown ends, you can withdraw your underlying NEAR.
+</Accordion>
 
-  <Accordion title="Why have veNEAR rewards been discontinued?" id="venear-rewards-discontinued">
-    The veNEAR rewards campaign was a limited-time program to recognize early governance participants. The program has concluded. If you earned rewards, you have 90 days from your lock date to claim them. For more details, see the [forum announcement](https://gov.near.org/t/hsp-003-venear-holder-rewards-program/41688). Staking rewards (yields from your staking pool) are unaffected and continue as normal.
-  </Accordion>
+<Accordion
+  title="Why have veNEAR rewards been discontinued?"
+  id="venear-rewards-discontinued"
+>
+  The veNEAR rewards campaign was a limited-time program to recognize early
+  governance participants. The program has concluded. If you earned rewards, you
+  have 90 days from your lock date to claim them. For more details, see the
+  [forum
+  announcement](https://gov.near.org/t/hsp-003-venear-holder-rewards-program/41688).
+  Staking rewards (yields from your staking pool) are unaffected and continue as
+  normal.
+</Accordion>
 
   <Accordion title="Can I unlock but keep my NEAR staked during the 45 days?" id="unlock-but-keep-staked">
     Yes, you can start the unlock and keep your tokens staked during the 45 days. The unlock timer and staking are independent from each other.
@@ -235,8 +278,9 @@ import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
     2. Your tokens stay staked and earn rewards during this time
     3. Towards the end of the 45 days - unstake from the pool (2-3 days cooldown)
     4. Withdraw to your lockup, then to your wallet
-    
+
     Unstaking at the end won't trigger another 45-day lock. The locking period and the unstaking period are separate things.
+
   </Accordion>
 </Accordions>
 
