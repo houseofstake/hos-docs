@@ -19,6 +19,8 @@
   --color-fd-accent: #EEEEEB;
   --color-fd-accent-foreground: #1A1A1B;
   --color-fd-ring: #66023C;
+  
+  --font-inter: "Inter", sans-serif;
 }
 
 body {

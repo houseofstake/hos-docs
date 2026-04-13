@@ -10,9 +10,11 @@ export const gitConfig = {
 
 export function baseOptions(): BaseLayoutProps {
   return {
-    disableThemeSwitch: true,
     nav: {
       title: "House of Stake",
+    },
+    themeSwitch: {
+      enabled: false,
     },
     githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
     links: [
