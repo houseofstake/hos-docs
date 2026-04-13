@@ -1,8 +1,11 @@
 ---
-title: What is veNEAR
+title: veNEAR Explained
+description: What veNEAR is, how you get it, and why it matters for House of Stake governance.
 ---
 
-**veNEAR (vote-escrowed NEAR)** is a governance token that allows NEAR holders to participate in House of Stake governance through a stake-weighted, time-locked mechanism.
+**veNEAR (vote-escrowed NEAR)** is the governance power used in House of Stake.
+
+In plain language: you lock eligible assets, and in return you receive voting power that can be used directly or delegated.
 
 By locking NEAR, stNEAR, or liNEAR tokens, users receive veNEAR. The longer the lock duration, the greater the voting power received. This aligns incentives for long-term commitment and active participation.
 

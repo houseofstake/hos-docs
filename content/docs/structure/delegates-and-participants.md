@@ -1,8 +1,11 @@
 ---
-title: Delegates & Participants
+title: Delegates and Voters
+description: Who participates in House of Stake, what delegates do, and how direct voting fits in.
 ---
 
-In House of Stake, **delegates** play a central role in executing governance on behalf of veNEAR holders. They are trusted participants who vote on proposals, help shape the future of the ecosystem, and are expected to act transparently and responsibly.
+In House of Stake, people can take part in governance in two main ways: they can vote directly, or they can delegate their voting power to someone they trust.
+
+Delegates play a central role by voting on proposals, helping shape the future of the ecosystem, and explaining their decisions in public.
 
 ## Delegates
 

@@ -1,6 +1,9 @@
 ---
-title: Versioning & Evolution
+title: How House of Stake Changes Over Time
+description: How governance rules and structures can evolve without losing transparency or legitimacy.
 ---
+
+House of Stake is meant to improve over time. This page explains how changes happen without turning governance into guesswork.
 
 House of Stake is designed as an evolving governance system. To stay relevant, it must be able to improve over time — without losing stability or trust.
 

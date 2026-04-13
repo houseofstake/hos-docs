@@ -1,6 +1,9 @@
 ---
-title: House of Stake Foundation Bylaws
+title: Foundation Bylaws
+description: The formal bylaws governing the House of Stake Foundation.
 ---
+
+This page contains the formal legal text of the Foundation bylaws. It is reference material, not a beginner guide.
 
 **THE HOUSE OF STAKE FOUNDATION**
 

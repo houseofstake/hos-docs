@@ -1,6 +1,9 @@
 ---
-title: House of Stake Mandate
+title: What House of Stake Can Decide
+description: The main areas House of Stake is intended to govern during the current phase.
 ---
+
+This page describes the scope of House of Stake. In other words: what House of Stake is supposed to govern, and what falls outside that scope for now.
 
 1. **Economic governance (of NEAR protocol and other NEAR products)**
    - Treasury management  

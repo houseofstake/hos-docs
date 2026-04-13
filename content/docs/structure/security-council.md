@@ -1,8 +1,11 @@
 ---
-title: Security Council
+title: What the Security Council Does
+description: The role of the Security Council in emergencies, upgrades, and governance safeguards.
 ---
 
-The Security Council is a critical governance body responsible for ensuring the security, integrity, and operational resilience of the NEAR protocol. It serves as a final line of defense in the governance architecture of House of Stake, particularly during emergencies or critical protocol upgrades.
+The Security Council is the governance body's emergency and safety backstop.
+
+It helps protect the NEAR protocol and the House of Stake process during emergencies, sensitive upgrades, or situations where security risks need fast action.
 
 ## Purpose
 

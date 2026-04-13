@@ -1,5 +1,6 @@
 ---
-title: Contribute to Code or Documentation
+title: How to Contribute
+description: Ways to help improve House of Stake through docs, governance work, feedback, and technical contributions.
 ---
 
 House of Stake is an open project — and contributions are welcome from anyone in the community.

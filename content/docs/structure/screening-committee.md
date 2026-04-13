@@ -1,9 +1,11 @@
 ---
-title: Screening Committee
+title: What the Screening Committee Does
+description: How the Screening Committee reviews proposals and oversees endorsed delegates.
 ---
 
-The **Screening Committee** is a core governance body within **House of Stake (HoS)**.
-It serves as the first layer of review and quality assurance for proposals, delegates, and governance processes — ensuring that all actions align with the **Mission, Vision, and Values** of House of Stake and comply with the **Constitution** and associated charters.
+The **Screening Committee** is the first formal review step in House of Stake governance.
+
+It reviews proposals, helps maintain quality standards, and oversees endorsed delegates so that governance stays aligned with House of Stake's mission and rules.
 
 This group acts as a **filter and guardian of integrity**, maintaining a balance between efficiency, transparency, and due diligence.
 
@@ -28,10 +30,7 @@ The committee is responsible for:
 - Approving or rejecting proposals for on-chain voting through an **optimistic consent model**:
   if no objections are raised within 24 hours, approval is assumed; if objections occur, a **simple majority vote** is required.
 - Managing the approval and removal of **Endorsed Delegates**.
-- Publishing all decisions and meeting notes for transparency.The **Screening Committee** is a core governance body within **House of Stake (HoS)**.
-It serves as the first layer of review and quality assurance for proposals, delegates, and governance processes — ensuring that all actions align with the **Mission, Vision, and Values** of House of Stake and comply with the **Constitution** and associated charters.
-
-This group acts as a **filter and guardian of integrity**, maintaining a balance between efficiency, transparency, and due diligence.
+- Publishing all decisions and meeting notes for transparency.
 
 ---
 

@@ -1,6 +1,9 @@
 ---
-title: Memorandum of Association of NEAR House of Stake Foundation and Articles of the Association
+title: Foundation Memorandum and Articles
+description: The formal memorandum of association and articles of association for the House of Stake Foundation.
 ---
+
+This page contains the formal legal text of the Foundation memorandum and articles. It is reference material for detailed legal and structural review.
 
 | THE COMPANIES ACT (AS AMENDED) THE FOUNDATION COMPANIES ACT, 2017 AMENDED AND RESTATED Memorandum OF association of NEAR House Of Stake Foundation a foundation company limited by guarantee without share capital |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

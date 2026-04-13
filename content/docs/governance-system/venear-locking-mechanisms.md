@@ -1,6 +1,9 @@
 ---
-title: veNEAR Locking Mechanism
+title: How Locking Works
+description: A simple explanation of how NEAR is locked, how veNEAR grows, and how unlocking works.
 ---
+
+This page explains the mechanics behind locking and unlocking in House of Stake.
 
 To obtain **veNEAR**, users must lock **NEAR**, **stNEAR**, or **liNEAR** tokens in a vote-escrow contract.
 The House of Stake governance system supports a **single flexible locking model** that does not require users to commit to a fixed duration.

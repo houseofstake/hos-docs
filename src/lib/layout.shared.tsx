@@ -16,7 +16,7 @@ export function baseOptions(): BaseLayoutProps {
     themeSwitch: {
       enabled: false,
     },
-    githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
+    githubUrl: `https://github.com/houseofstake`,
     links: [
       {
         text: "Govern HoS",
