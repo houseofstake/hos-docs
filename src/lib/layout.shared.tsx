@@ -10,6 +10,7 @@ export const gitConfig = {
 
 export function baseOptions(): BaseLayoutProps {
   return {
+    disableThemeSwitch: true,
     nav: {
       title: "House of Stake",
     },
