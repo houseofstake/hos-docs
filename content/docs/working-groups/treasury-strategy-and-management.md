@@ -1,5 +1,6 @@
 ---
-title: Treasury Strategy & Management WG
+title: Treasury Strategy and Management Working Group
+description: The working group focused on treasury planning, finance processes, and reporting standards.
 ---
 
 This working group’s mission is to effectively utilize treasury resources to drive long-term sustainability and growth for the NEAR ecosystem through House of Stake.

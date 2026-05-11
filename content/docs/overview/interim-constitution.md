@@ -1,6 +1,9 @@
 ---
-title: NEAR House of Stake - Interim Constitution (v0.1.0)
+title: Interim Constitution
+description: The current high-level governance constitution for House of Stake in its interim form.
 ---
+
+This is a formal governance document. If you want the short version first, read [Start Here](/docs), [Why House of Stake Uses Stake-Weighted Governance](/docs/overview/governance-philosophy), and [How Proposals and Voting Work](/docs/governance-system/proposal-and-voting-process).
 
 ## Article 1 — Foundational Provisions
 

@@ -1,6 +1,9 @@
 ---
 title: AI Governance Product Roadmap
+description: The current staged roadmap for using AI to support, represent, and organize governance work.
 ---
+
+This page describes a forward-looking roadmap. It is not the same thing as the current core governance flow, but it shows where House of Stake may go next.
 
 This roadmap outlines the current direction of **AI Governance** within **House of Stake**, based on the document [AI Governance Product Roadmap](https://gov.near.org/t/ai-governance-product-roadmap/41683).
 

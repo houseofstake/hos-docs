@@ -1,5 +1,6 @@
 ---
-title: Why This Matters
+title: Why House of Stake Exists
+description: The governance problems House of Stake is meant to solve and why its design is different.
 ---
 
 Governance is infrastructure.

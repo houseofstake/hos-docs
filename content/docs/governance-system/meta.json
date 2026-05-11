@@ -1,0 +1,9 @@
+{
+  "title": "How It Works",
+  "pages": [
+    "./what-is-venear",
+    "./venear-locking-mechanisms",
+    "./proposal-and-voting-process",
+    "./versioning-and-evolution"
+  ]
+}

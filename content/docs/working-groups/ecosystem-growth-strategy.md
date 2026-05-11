@@ -1,5 +1,6 @@
 ---
-title: Ecosystem Growth Strategy WG
+title: Ecosystem Growth Working Group
+description: The working group focused on user growth, builder growth, and ecosystem adoption.
 ---
 
 This working group is focused on expanding the NEAR ecosystem by driving user adoption, engaging developers, and improving token utility across the stack.

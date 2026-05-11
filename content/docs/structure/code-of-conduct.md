@@ -1,6 +1,9 @@
 ---
-title: Code of Conduct
+title: Participation Standards and Code of Conduct
+description: The standards of behavior expected from House of Stake participants across governance spaces.
 ---
+
+This is a formal standards document. It explains the behavior House of Stake expects in governance discussions, decision-making, moderation, and community participation.
 
 ## 1. Our Pledge
 

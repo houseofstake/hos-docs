@@ -1,5 +1,6 @@
 ---
-title: Governance Infrastructure & Processes WG
+title: Governance Infrastructure and Processes Working Group
+description: The working group focused on governance structure, process design, and operational clarity.
 ---
 
 This working group is responsible for designing and maintaining the core structures that make House of Stake function.

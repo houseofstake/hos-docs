@@ -1,9 +1,12 @@
 ---
-title: Responsibilities and Scope (RACI)
+title: Who Does What (Roles and Responsibilities)
+description: A plain-language overview of who is responsible for each major governance step.
 ---
 
 
-This section defines the roles and responsibilities of key governance participants within the House of Stake, using the [RACI matrix](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix):
+This page explains who does what in House of Stake.
+
+It uses a [RACI matrix](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix), which is a simple way to show who leads the work, who makes the final call, who gives input, and who needs to stay informed.
 
 - **R – Responsible:** Who does the work
 - **A – Accountable:** Who is ultimately answerable for the outcome
@@ -37,7 +40,7 @@ This section defines the roles and responsibilities of key governance participan
 
 ---
 
-## Why RACI Matters
+## Why This Matters
 
 The RACI model clarifies responsibilities, reduces overlap, and increases transparency.
 It makes complex governance processes easier to understand and more efficient—especially in decentralized environments.

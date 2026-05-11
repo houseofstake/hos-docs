@@ -1,5 +1,6 @@
 ---
-title: Network Economics & Security WG
+title: Network Economics and Security Working Group
+description: The working group focused on validator incentives, economic sustainability, and protocol resilience.
 ---
 
 This working group focuses on the sustainability and resilience of NEAR’s core economic and security infrastructure.
