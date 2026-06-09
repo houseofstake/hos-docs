@@ -9,8 +9,10 @@ import {
   ViewOptionsPopover,
 } from "fumadocs-ui/layouts/docs/page";
 import { createRelativeLink } from "fumadocs-ui/mdx";
+import { Pencil } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getDocEditUrl, repoUrl } from "@/lib/layout.shared";
 
 export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const params = await props.params;
@@ -18,6 +20,7 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   if (!page) notFound();
 
   const MDX = page.data.body;
+  const editUrl = getDocEditUrl(page.slugs);
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
@@ -25,12 +28,21 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
       <DocsDescription className="mb-0">
         {page.data.description}
       </DocsDescription>
-      <div className="flex flex-row gap-2 items-center border-b pb-6">
+      <div className="flex flex-row flex-wrap gap-2 items-center border-b pb-6">
         <MarkdownCopyButton markdownUrl={`${page.url}.mdx`} />
         <ViewOptionsPopover
           markdownUrl={`${page.url}.mdx`}
-          githubUrl={`https://github.com/houseofstake`}
+          githubUrl={repoUrl}
         />
+        <a
+          href={editUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex h-8 items-center gap-2 rounded-md border bg-fd-secondary px-3 text-xs font-medium leading-none text-fd-secondary-foreground transition-colors hover:bg-fd-accent hover:text-fd-accent-foreground"
+        >
+          <Pencil className="size-3.5 shrink-0 stroke-[1.75]" />
+          Edit this page
+        </a>
       </div>
       <DocsBody>
         <MDX

@@ -47,7 +47,7 @@ export default function HomePage() {
             Learn How It Works
           </Link>
           <a
-            href="https://gov.houseofstake.org"
+            href="https://houseofstake.org"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-white border border-fd-border px-8 py-3 text-sm font-medium text-fd-foreground hover:bg-fd-muted transition-colors shadow-sm"
