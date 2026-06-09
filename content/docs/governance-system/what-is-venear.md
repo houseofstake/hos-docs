@@ -7,9 +7,9 @@ description: What veNEAR is, how you get it, and why it matters for House of Sta
 
 In plain language: you lock eligible assets, and in return you receive voting power that can be used directly or delegated.
 
-By locking NEAR, stNEAR, or liNEAR tokens, users receive veNEAR. The longer the lock duration, the greater the voting power received. This aligns incentives for long-term commitment and active participation.
+By locking NEAR, stNEAR,liNEAR or rNEAR tokens, users receive veNEAR. The longer the lock duration, the greater the voting power received. This aligns incentives for long-term commitment and active participation.
 
-![veNEAR Flow](./assets/venear-flow.png)
+![veNEAR Flow](./assets/venearflow.png)
 
 ## Key Characteristics
 
