@@ -20,6 +20,8 @@ Whether you're a developer, writer, or governance nerd, there’s a place for yo
 - Follow updates on [X (Twitter)](https://x.com/NEARGovernance)
 - Read posts on [Medium](https://medium.com/@nearcommunitysquad/near-governance-101-house-of-stake-378ef7aa3c0f)
 - Explore ongoing discussions on the [Governance Forum](https://gov.near.org)
-- GitHub repo coming soon!
+- Edit any page from the **Edit this page** button in the documentation toolbar
+- Browse the [House of Stake docs repository](https://github.com/houseofstake/hos-docs)
+- Update or remove documentation files in [`content/docs`](https://github.com/houseofstake/hos-docs/tree/main/content/docs)
 
 If you’d like to get involved in something specific, feel free to suggest it publicly — or just start building.

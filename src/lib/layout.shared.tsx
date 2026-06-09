@@ -8,6 +8,21 @@ export const gitConfig = {
   branch: "main",
 };
 
+export const repoUrl = `https://github.com/${gitConfig.user}/${gitConfig.repo}`;
+
+const mdxDocPaths = new Set([
+  "index",
+  "governance-system/proposal-and-voting-process",
+  "overview/faqs",
+]);
+
+export function getDocEditUrl(slugs: string[]) {
+  const docPath = slugs.length > 0 ? slugs.join("/") : "index";
+  const extension = mdxDocPaths.has(docPath) ? "mdx" : "md";
+
+  return `${repoUrl}/edit/${gitConfig.branch}/content/docs/${docPath}.${extension}`;
+}
+
 export function baseOptions(): BaseLayoutProps {
   return {
     nav: {
@@ -28,11 +43,11 @@ export function baseOptions(): BaseLayoutProps {
     themeSwitch: {
       enabled: false,
     },
-    githubUrl: `https://github.com/houseofstake`,
+    githubUrl: repoUrl,
     links: [
       {
         text: "Govern HoS",
-        url: "https://gov.houseofstake.org",
+        url: "https://houseofstake.org",
         icon: <ExternalLink />,
       },
     ],
