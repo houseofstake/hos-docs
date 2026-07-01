@@ -27,3 +27,37 @@ body {
   background-color: var(--color-fd-background);
   color: var(--color-fd-foreground);
 }
+
+:root {
+  --fd-layout-width: 100vw;
+}
+
+#nd-sidebar [data-active="true"] {
+  background-color: transparent !important;
+}
+
+#nd-home-layout {
+  background-color: #ffffff;
+}
+
+#nd-home-layout #nd-nav {
+  position: fixed;
+  width: 100%;
+}
+
+#nd-home-layout #nd-nav > div {
+  background-color: rgb(255 255 255 / 0.8) !important;
+  border-bottom-color: transparent !important;
+}
+
+@media (min-width: 768px) {
+  #nd-sidebar {
+    inset-block: 12px !important;
+    inset-inline-start: 12px !important;
+    height: auto !important;
+    border: 1px solid var(--color-fd-border) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 18px 40px rgb(26 26 27 / 0.08) !important;
+    overflow: hidden;
+  }
+}
