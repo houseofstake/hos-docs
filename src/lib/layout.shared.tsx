@@ -25,57 +25,59 @@ export function getDocEditUrl(slugs: string[]) {
 
 type BaseOptionsConfig = {
   showMainNav?: boolean;
+  mainSiteUrl: string;
 };
 
 const mainMenuItems = [
   {
     label: "Home",
-    href: "https://houseofstake.org",
+    path: "",
   },
   {
     label: "Proposals",
-    href: "https://houseofstake.org/proposals",
+    path: "/proposals",
   },
   {
     label: "Voters",
-    href: "https://houseofstake.org/delegates",
+    path: "/delegates",
   },
   {
     label: "Assets",
-    href: "https://houseofstake.org/assets",
+    path: "/assets",
   },
 ];
 
-const mainLinks: BaseLayoutProps["links"] = [
-  {
-    type: "custom",
-    on: "menu",
-    children: (
-      <div className="flex w-full flex-col items-center gap-2">
-        {mainMenuItems.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-9 items-center justify-center px-3 text-[15px] font-medium leading-[20px] text-[#1a1a1b] transition-colors hover:text-fd-primary"
-          >
-            {item.label}
-          </a>
-        ))}
-      </div>
-    ),
-  },
-];
+function getMainLinks(mainSiteUrl: string): BaseLayoutProps["links"] {
+  return [
+    {
+      type: "custom",
+      on: "menu",
+      children: (
+        <div className="flex w-full flex-col items-center gap-2">
+          {mainMenuItems.map((item) => (
+            <a
+              key={item.path}
+              href={`${mainSiteUrl}${item.path}`}
+              className="inline-flex h-9 items-center justify-center px-3 text-[15px] font-medium leading-[20px] text-[#1a1a1b] transition-colors hover:text-fd-primary"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      ),
+    },
+  ];
+}
 
 export function baseOptions({
   showMainNav = false,
-}: BaseOptionsConfig = {}): BaseLayoutProps {
+  mainSiteUrl,
+}: BaseOptionsConfig): BaseLayoutProps {
   return {
-    links: showMainNav ? mainLinks : undefined,
+    links: showMainNav ? getMainLinks(mainSiteUrl) : undefined,
     nav: {
-      url: "https://houseofstake.org",
-      children: showMainNav ? <HosNav /> : null,
+      url: "/main-site",
+      children: showMainNav ? <HosNav mainSiteUrl={mainSiteUrl} /> : null,
       title: (
         <span className="flex min-w-0 items-center gap-2">
           <Image
