@@ -1,21 +1,23 @@
-"use client";
-
 const navItems = [
-  { label: "Home", href: "https://houseofstake.org", key: "home" },
+  { label: "Home", path: "", key: "home" },
   {
     label: "Proposals",
-    href: "https://houseofstake.org/proposals",
+    path: "/proposals",
     key: "proposals",
   },
   {
     label: "Voters",
-    href: "https://houseofstake.org/delegates",
+    path: "/delegates",
     key: "voters",
   },
-  { label: "Assets", href: "https://houseofstake.org/assets", key: "assets" },
+  { label: "Assets", path: "/assets", key: "assets" },
 ];
 
-export function HosNav() {
+type HosNavProps = {
+  mainSiteUrl: string;
+};
+
+export function HosNav({ mainSiteUrl }: HosNavProps) {
   return (
     <nav
       aria-label="House of Stake"
@@ -25,9 +27,7 @@ export function HosNav() {
         return (
           <a
             key={item.key}
-            href={item.href}
-            target="_blank"
-            rel="noreferrer"
+            href={`${mainSiteUrl}${item.path}`}
             className="inline-flex h-[34px] items-center justify-center px-4 text-[13px] font-medium leading-[19.5px] text-[#6b6b6b] transition-colors hover:text-fd-primary"
           >
             {item.label}
