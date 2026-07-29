@@ -3,6 +3,11 @@
   "pages": [
     "./bylaws",
     "./memorandum-of-association",
-    "./constitution"
+    "./constitution",
+    "./proposals-and-voting-procedures",
+    "./screening-committee-charter",
+    "./mission-vision-values",
+    "./conflict-of-interest-policy",
+    "./code-of-conduct"
   ]
 }
