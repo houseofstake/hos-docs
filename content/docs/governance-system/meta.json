@@ -3,7 +3,6 @@
   "pages": [
     "./what-is-venear",
     "./venear-locking-mechanisms",
-    "./proposal-and-voting-process",
-    "./versioning-and-evolution"
+    "./proposal-and-voting-process"
   ]
 }
