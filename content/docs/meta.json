@@ -4,10 +4,7 @@
     "./overview",
     "./governance-system",
     "./structure",
-    "./working-groups",
     "./structure/legal-documents",
-    "./strategic-direction",
-    "./get-involved",
     "..."
   ]
 }
