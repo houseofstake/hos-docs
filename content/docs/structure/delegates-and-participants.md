@@ -1,40 +1,46 @@
 ---
-title: Delegates and Voters
-description: Who participates in House of Stake, what delegates do, and how direct voting fits in.
+title: Voters and Delegates
+description: Who votes directly, who delegates, and how each role's authority is bounded by the Constitution.
 ---
 
-In House of Stake, people can take part in governance in two main ways: they can vote directly, or they can delegate their voting power to someone they trust.
+## Voters (Tokenholders)
 
-Delegates play a central role by voting on proposals, helping shape the future of the ecosystem, and explaining their decisions in public.
+Tokenholders acquire voting power by [locking NEAR tokens](/docs/governance-system/venear-locking-mechanisms) and receiving [veNEAR voting power](/docs/governance-system/what-is-venear) in accordance with the Governance Framework. They may either exercise their voting power directly or delegate it to a Delegate.
+
+Voters are the sovereign decision-makers of the House of Stake. They exercise governance by voting on proposals submitted through the [governance process](/docs/governance-system/proposal-and-voting-process) and are ultimately responsible for approving or rejecting changes to the protocol, economic parameters, constitutional documents, and other governance decisions reserved to tokenholders according to House of Stake's [Mandate](https://houseofstake.org/blog/House-of-Stake-2.0).
+
+Their key responsibilities include:
+
+- Voting on proposals admitted to governance.
+- Approving constitutional amendments and other matters reserved for tokenholder approval.
+- Exercising oversight by holding governance participants accountable through the voting process.
+
+Their authority is bounded by the [Constitution](/docs/structure/legal-documents/constitution):
+
+- Voters may only decide on matters properly brought before them through the [governance process](/docs/governance-system/proposal-and-voting-process).
+- Execution of approved proposals is delegated to the appropriate operational or legal entities (e.g. [Foundation Directors, Operations Team](/docs/structure/responsibilities-and-scope)), rather than performed directly by voters.
+- Certain emergency powers, constitutional oversight, or delegated resource-allocation decisions are assigned to other governance bodies (e.g. the [Security Council](/docs/structure/security-council)) rather than remaining subject to day-to-day tokenholder voting.
 
 ## Delegates
 
-Delegates receive voting power when other veNEAR holders delegate their tokens to them. To become a delegate, a user must meet certain requirements and publicly commit to participating in governance.
+Delegates are community members entrusted by tokenholders to participate actively in governance on their behalf. They review proposals, engage in governance discussions, and cast votes using delegated voting power while acting in the best interests of the House of Stake ecosystem.
 
-### Responsibilities
+Their key responsibilities include:
 
-- Vote actively on governance proposals
-- Provide rationale for their decisions
-- Engage with the community and answer questions
-- Comply with the Code of Conduct and avoid conflicts of interest
+- Evaluating proposals and their potential impact on the ecosystem.
+- Participating in governance discussions and providing informed feedback.
+- Voting on proposals using delegated voting power.
 
-Delegates may receive **incentives** if they meet participation criteria such as maintaining 80%+ voting activity, regular updates, and holding at least 0.5% of veNEAR.
+Delegates are accountable to the tokenholders who delegate to them:
 
-## Participants
+- Delegations are voluntary and may be changed or withdrawn by tokenholders at any time.
+- Delegates have no executive or operational authority unless separately appointed to another governance body.
+- Their role is limited to governance participation and voting; implementation of approved proposals is carried out by the appropriate operational bodies.
 
-Anyone holding veNEAR can participate in governance directly — by voting, submitting proposals, or delegating their tokens.
+**Note:** As of April 5th, 2026, the special endorsed delegate role has been paused at House of Stake.
 
-Participants can:
+**All Voters and Delegates are required to act independently and in good faith in accordance with the [Constitution](/docs/structure/legal-documents/constitution), [Code of Conduct](/docs/structure/legal-documents/code-of-conduct), and [Conflict of Interest Policy](/docs/structure/legal-documents/conflict-of-interest-policy). This includes disclosing and appropriately managing conflicts of interest when participating in governance.**
 
-- Self-delegate or choose a delegate
-- Submit improvement proposals (grants, rules, experiments)
-- Join discussions in public governance forums
+---
 
-House of Stake encourages both **direct** and **delegated** participation to ensure flexibility and inclusion.
-
-## Role of Delegates
-
-Participation in House of Stake is permissionless — anyone holding veNEAR can vote directly. However, the delegate system exists to streamline governance for everyday participants by enabling delegation to trusted representatives.
-
-## Endorsed Delegate role
-As of April 5th, 2025, the endorsed delegate role has been paused for Season #1.
+*Disclaimer: This document is for informational purposes only and does not constitute investment advice, a solicitation, or an offer to buy or sell any token. Governance structures and processes described herein are subject to change.*
