@@ -1,122 +1,40 @@
 ---
-title: What the Screening Committee Does
-description: How the Screening Committee reviews proposals and oversees endorsed delegates.
+title: Screening Committee
+description: The role, responsibilities, and obligations of the Screening Committee in reviewing proposals for governance.
 ---
 
-The **Screening Committee** is the first formal review step in House of Stake governance.
+The Screening Committee is responsible for reviewing submitted proposals to determine whether they are ready for governance consideration. It evaluates proposals against the requirements set out in the [Constitutional Documents](/docs/structure/legal-documents/constitution), ensuring they are complete, within the [mandate](https://houseofstake.org/blog/House-of-Stake-2.0) of the House of Stake, and suitable for submission to a [tokenholder vote](/docs/governance-system/proposal-and-voting-process).
 
-It reviews proposals, helps maintain quality standards, and oversees endorsed delegates so that governance stays aligned with House of Stake's mission and rules.
+## Responsibilities
 
-This group acts as a **filter and guardian of integrity**, maintaining a balance between efficiency, transparency, and due diligence.
+The Screening Committee is responsible for:
 
----
+- Reviewing proposals for compliance with the [Constitution](/docs/structure/legal-documents/constitution) and other applicable Constitutional Documents.
+- Assessing whether proposals fall within the scope and [mandate](https://houseofstake.org/blog/House-of-Stake-2.0) of the House of Stake.
+- Confirming that proposals meet the required submission and documentation standards.
+- Requesting clarifications or revisions from Proposal Authors where necessary.
+- Admitting eligible proposals to a [governance vote](/docs/governance-system/proposal-and-voting-process) or rejecting proposals that do not meet the required criteria, providing reasons for the decision.
 
-## Current Status: Interim Screening Committee
+The Screening Committee does not determine the policy merits of a proposal or substitute its judgment for that of [Tokenholders](/docs/structure/delegates-and-participants). Its role is limited to ensuring that proposals satisfy the constitutional, procedural, and formal requirements necessary to proceed to a vote. The Screening Committee review is supported by the [HSP Editor](/docs/structure/legal-documents/proposals-and-voting-procedures).
 
-The **Interim Screening Committee (ISC)** operates under the mandate of the **NEAR Foundation**, in accordance with the
-**[NEAR House of Stake – Screening Committee Charter v0.1.0](https://gov.near.org/t/near-house-of-stake-interim-screening-committee-charter/41689)**.
-Its mission is to uphold the integrity, neutrality, and effectiveness of House of Stake governance until a community-elected committee replaces it.
+## Role Defined By
 
-The committee is responsible for:
+The role, responsibilities, and authority of the Screening Committee are defined by the following [Constitutional Documents](/docs/structure/legal-documents/constitution):
 
-- Reviewing all submitted proposals within **seven (7) days** of final submission.
-- Evaluating proposals based on:
-  - Technical feasibility
-  - Stakeholder alignment
-  - Policy and regulatory compliance
-  - Risk management
-  - Financial impact
-  - Alignment with the HoS Mission, Vision, and Values
-- Approving or rejecting proposals for on-chain voting through an **optimistic consent model**:
-  if no objections are raised within 24 hours, approval is assumed; if objections occur, a **simple majority vote** is required.
-- Managing the approval and removal of **Endorsed Delegates**.
-- Publishing all decisions and meeting notes for transparency.
+- **[Constitution](/docs/structure/legal-documents/constitution)** – establishes the Screening Committee as a governance body and defines its constitutional authority and mandate.
+- **[Proposals and Voting Procedures](/docs/structure/legal-documents/proposals-and-voting-procedures)** – defines the proposal lifecycle, screening process, admission criteria, and governance workflow.
+- **[Screening Committee Charter](/docs/structure/legal-documents/screening-committee-charter)** – defines the committee's composition, responsibilities, review standards, decision-making process, and operating procedures.
+- **[Participation Standards and Code of Conduct](/docs/structure/legal-documents/code-of-conduct)** – establishes the standards of integrity, professionalism, impartiality, and conduct expected of committee members.
+- **[Conflict of Interest Policy](/docs/structure/legal-documents/conflict-of-interest-policy)** – defines the requirements for identifying, disclosing, and managing conflicts of interest.
 
----
+## Obligations as Governance Body Members
 
-## Current Status: Interim Screening Committee
+As members of a governance body, Screening Committee members are required to:
 
-The **Interim Screening Committee (ISC)** operates under the mandate of the **NEAR Foundation**, in accordance with the
-**[NEAR House of Stake – Screening Committee Charter v0.1.0](https://gov.near.org/t/near-house-of-stake-interim-screening-committee-charter/41689)**.
-Its mission is to uphold the integrity, neutrality, and effectiveness of House of Stake governance until a community-elected committee replaces it.
-
-The committee is responsible for:
-
-- Reviewing all submitted proposals within **seven (7) days** of final submission.
-- Evaluating proposals based on:
-  - Technical feasibility
-  - Stakeholder alignment
-  - Policy and regulatory compliance
-  - Risk management
-  - Financial impact
-  - Alignment with the HoS Mission, Vision, and Values
-- Approving or rejecting proposals for on-chain voting through an **optimistic consent model**:
-  if no objections are raised within 24 hours, approval is assumed; if objections occur, a **simple majority vote** is required.
-- Managing the approval and removal of **Endorsed Delegates**.
-- Publishing all decisions and meeting notes for transparency.
-
----
-
-## Committee Composition
-
-The Interim Screening Committee is composed of members appointed by the **NEAR Foundation**.
-Membership may change during the interim period, and any member may step down with **seven (7) days’ public notice** on the governance forum.
-
-**Current Members:**
-- Bianca Guimaraes-Chadwick (NEAR Foundation)
-- Bowen Wang (Near One)
-- Gauntlet (1 seat)
-
-The Interim Committee will remain in effect until **May 31, 2026**, or until replaced by a **community-elected Screening Committee** developed in accordance with the process defined in the Constitution (Article 9.2).
-
----
-
-## What Happens Next
-
-The top priority moving forward is the **transition** from a Foundation-appointed interim body to a **community-elected Screening Committee**.
-This process will be implemented through a **co-created replacement charter** and **open elections**.
-
-If this transition is not completed by **May 31, 2026**, the interim committee will automatically **lose its constitutional authority** under the Constitution.
-
----
-
-## Responsibilities of the Screening Committee
-
-### 1. Proposal Review & Governance Flow
-- Review and publish decisions on all proposals within seven (7) days.
-- Provide clear reasoning for each decision in the governance forum.
-- Approve only proposals that meet all review criteria.
-- Allow an **appeal process** — rejected proposals may still advance with support from at least three endorsed delegates.
-- Filtering mechanism: proposals rejected by the Committee must achieve a **75% community supermajority** to pass.
-
-### 2. Delegate Oversight
-- Conduct quarterly reviews of **Endorsed Delegate** applications and activity.
-- Monitor performance, transparency, and compliance with the **Code of Conduct** and **Conflict of Interest Policy**.
-- Remove delegates who fail to meet performance or governance standards.
-
-### 3. Transparency & Reporting
-- Log and publish all decisions, summaries, and rationales within **seven (7) days**.
-- Publicly record all approvals, rejections, removals, and appointments.
-- Any member may post clarifications or updates regarding their role on the governance forum.
-
-### 4. Meetings & Operations
-- Decisions follow an **optimistic consent model** (assumed approved unless objected to).
-- Quorum requires **three members**, or **two members plus the Head of Governance**, who may act as a tie-breaker.
-- The committee may appoint a **Chair** from among its members.
-- When necessary, the committee may appoint third parties to lead specific projects or deliverables.
-
----
-
-## Transition to a Community-Led Model
-
-After the approval of a **new co-created charter**, community elections will be held to form a **community-elected Screening Committee**.
-The interim body will disband immediately after the first election, ensuring a transparent and smooth transition.
-
----
-
-## Transparency & Accountability
-
-The Screening Committee operates under the **House of Stake Code of Conduct** and the **Constitution**.
-All members are expected to uphold principles of transparency, neutrality, and accountability.
-Violations of these standards may result in **removal**, as outlined in the Constitution (Article 5.2).
-Compensation and reimbursements follow the governance transparency standards established in **Article 5 (Integrity, Conflicts of Interest, and Accountability)** of the Constitution.
+- Act in good faith and in the best interests of the House of Stake.
+- Act independently and exercise their judgment free from undue influence.
+- Comply with the [Constitution](/docs/structure/legal-documents/constitution) and all applicable Constitutional Documents.
+- Adhere to the [Participation Standards and Code of Conduct](/docs/structure/legal-documents/code-of-conduct).
+- Disclose and appropriately manage conflicts of interest in accordance with the [Conflict of Interest Policy](/docs/structure/legal-documents/conflict-of-interest-policy), including recusing themselves where required.
+- Perform their duties diligently, impartially, and consistently.
+- Maintain transparency by documenting and communicating screening decisions in accordance with the [Proposal and Voting Procedures](/docs/structure/legal-documents/proposals-and-voting-procedures).
