@@ -3,52 +3,39 @@ title: What the Security Council Does
 description: The role of the Security Council in emergencies, upgrades, and governance safeguards.
 ---
 
-The Security Council is the governance body's emergency and safety backstop.
+The Security Council is responsible for protecting the security, integrity, and continuity of the House of Stake governance system. It serves as a safeguard against security incidents and other exceptional circumstances that could threaten the proper functioning of House of Stake or the implementation of governance decisions.
 
-It helps protect the NEAR protocol and the House of Stake process during emergencies, sensitive upgrades, or situations where security risks need fast action.
-
-## Purpose
-
-The Security Council exists to:
-
-- Respond to urgent threats or security vulnerabilities
-- Coordinate emergency actions (e.g., halts, patch deployments)
-- Provide oversight during sensitive governance transitions
-- Maintain trust in the network during crises
-
-## Structure
-
-The Council is composed of two types of members:
-
-- **Core Members**: Permanent representatives from foundational NEAR ecosystem organizations (e.g., Near Foundation,Near One)
-- **Key Members**: Independent or semi-independent contributors with technical or strategic expertise
-
-![Security Council Structure](./assets/security-council.png)
-
-This tiered composition ensures both institutional stability and diverse perspectives.
+The Security Council operates within the authority granted to it by the [Constitutional Documents](/docs/structure/legal-documents/constitution). Its role is protective and operational: it does not determine governance policy or replace the decision-making authority of [Tokenholders](/docs/structure/delegates-and-participants). Within the House of Stake governance framework, Tokenholders serve as the primary governance decision-makers. The Council is better understood as a constitutional backstop: it protects the system against decisions or circumstances that threaten the constitutional framework rather than deciding whether an otherwise valid proposal is good policy.
 
 ## Responsibilities
 
-- Initiate emergency interventions when necessary
-- Inform the community within 7 days after emergency actions
-- Monitor proposals for potential malicious behavior
-- Coordinate with developers, validators, and governance participants during upgrades
-- Oversee technical integrity of the governance system
-- Support the Screening Committee in identifying security risks
+The Security Council is responsible for:
 
-## Accountability
+- **Constitutional oversight:** Safeguard the integrity of the Foundation's operations and ensure that governance remains consistent with HoS's constitutional purpose and principles.
+- **Proposal veto:** Veto proposals where the constitutional conditions for a veto are met, principally where a proposal is misaligned with HoS's purpose or principles. This should be understood as a narrow constitutional safeguard, not a second policy or strategic review of proposals.
+- **Emergency actions:** Take actions under the constitutional emergency procedures when circumstances require intervention outside the normal governance process.
+- **Non-emergency actions:** Coordinating with other governance bodies and relevant technical participants when responding to security-related matters.
+- **Emergency meetings:** Convene or participate in Emergency Meetings as provided for by the governing documents.
+- **Transparency:** Documenting and communicating Security Council actions in accordance with applicable transparency, reporting, and confidentiality requirements.
 
-Security Council members are expected to act in the best interest of the NEAR ecosystem. While their powers are reserved for exceptional circumstances, transparency and clear communication are required after any intervention.
+## Role Defined By
 
-Over time, the Council’s composition and powers may evolve through on-chain governance decisions as the system matures.
+The role, responsibilities, and authority of the Security Council are defined by the following Constitutional Documents:
 
-## Council Composition
+- **[HoS Foundation Memorandum and Articles](/docs/structure/legal-documents/memorandum-of-association)** — part of the Foundation's legal constitutional framework; establishes the relevant legal governance structure and should be considered when determining the Security Council's formal authority and relationship to the Foundation.
+- **[HoS Foundation Bylaws](/docs/structure/legal-documents/bylaws)** — specifies governance structures, powers, procedures, and obligations applicable to the Security Council.
+- **[Constitution](/docs/structure/legal-documents/constitution)** — establishes the broader HoS governance framework and the Security Council's constitutional role.
+- **[Proposals and Voting Procedures](/docs/structure/legal-documents/proposals-and-voting-procedures)** – defines the proposal lifecycle, admission criteria, and governance workflow.
+- **[Code of Conduct](/docs/structure/legal-documents/code-of-conduct) and [Conflict of Interest Policy](/docs/structure/legal-documents/conflict-of-interest-policy)** — impose behavioral, integrity, independence, disclosure, and conflict-management obligations on Council members.
 
-The Security Council membership is appointed by the **NEAR Foundation**. Every effort will be made to keep the membership up to date here, but the current set of member accounts is always visible on chain as the [members of the `hos-root.sputnik-dao.near` account](https://hos-root.near.page/hos-root.near/widget/app?page=settings&tab=members).
+## Obligations as Governance Body Members
 
-**Current Members:**
-- `as.near` (Alex Shevchenko)
-- `fastnear-hos.near` (Evgeny Kuzyakov)
-- `c65255255d689f74ae46b0a89f04bbaab94d3a51ab9dc4b79b1e9b61e7cf6816` (Kendall Cole)
-- `e953bb69d1129e4da87b99739373884a0b57d5e64a65fdc868478f22e6c31eac` (Bowen Wang)
-- `root.near` (Illia Polosukhin)
+As members of a governance body, Security Council members are required to:
+
+- Act in good faith and in the best interests of the House of Stake.
+- Act independently and exercise their judgment free from undue influence.
+- Comply with the [Constitution](/docs/structure/legal-documents/constitution) and all applicable Constitutional Documents.
+- Adhere to the [Participation Standards and Code of Conduct](/docs/structure/legal-documents/code-of-conduct).
+- Disclose and appropriately manage conflicts of interest in accordance with the [Conflict of Interest Policy](/docs/structure/legal-documents/conflict-of-interest-policy), including recusing themselves where required.
+- Perform their duties diligently, impartially, and consistently.
+- Maintain transparency by documenting and communicating Security Council actions and decisions in accordance with the [Constitutional Documents](/docs/structure/legal-documents/constitution).
