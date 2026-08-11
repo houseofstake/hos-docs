@@ -1,5 +1,5 @@
 ---
-title: Screening Committee
+title: What the Screening Committee Does
 description: The role, responsibilities, and obligations of the Screening Committee in reviewing proposals for governance.
 ---
 
