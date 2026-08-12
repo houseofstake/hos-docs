@@ -67,41 +67,41 @@ This page contains the formal legal text of the Foundation memorandum and articl
 | CLAUSE | PAGE |
 | :----- | ---: |
 
-[INTERPRETATION 1](#near-house-of-stake-foundation)
+INTERPRETATION 1
 
-[PRELIMINARY 1](#preliminary)
+PRELIMINARY 1
 
-[MEMBERS 2](#members)
+MEMBERS 2
 
-[DIRECTORS 3](#heading=h.3j2qqm3)
+DIRECTORS 3
 
-[SUPERVISORS 5](#supervisors)
+SUPERVISORS 5
 
-[BENEFICIARIES 8](#beneficiaries)
+BENEFICIARIES 8
 
-[SECRETARY 9](#secretary)
+SECRETARY 9
 
-[GENERAL MEETINGS 9](#general-meetings)
+GENERAL MEETINGS 9
 
-[PROXIES 10](#proxies)
+PROXIES 10
 
-[DIRECTORS MEETINGS 11](#directors-meetings)
+DIRECTORS MEETINGS 11
 
-[REGISTERS 11](#heading=h.32hioqz)
+REGISTERS 11
 
-[ACCOUNTS 11](#accounts)
+ACCOUNTS 11
 
-[FINANCIAL YEAR END 12](#by-notice-to-the-foundation-company-a-supervisor-may-call-for-such-reports,-accounts,-information-and-explanations-from-the-directors-as-to-the-administration-of-the-foundation-company-as-are-described-in-the-notice.)
+FINANCIAL YEAR END 12
 
-[AUDITORS 12](#auditors)
+AUDITORS 12
 
-[WINDING-UP 12](#winding-up)
+WINDING-UP 12
 
-[INDEMNITY 13](#indemnity)
+INDEMNITY 13
 
-[BYLAWS 13](#bylaws)
+BYLAWS 13
 
-[ALTERATION OF ARTICLES 13](#alteration-of-articles)
+ALTERATION OF ARTICLES 13
 
 **The Companies Act (as amended)**
 
