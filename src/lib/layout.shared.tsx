@@ -13,7 +13,7 @@ export const repoUrl = `https://github.com/${gitConfig.user}/${gitConfig.repo}`;
 const mdxDocPaths = new Set([
   "index",
   "governance-system/proposal-and-voting-process",
-  "overview/faqs",
+  "structure/legal-documents/code-of-conduct",
 ]);
 
 export function getDocEditUrl(slugs: string[]) {
