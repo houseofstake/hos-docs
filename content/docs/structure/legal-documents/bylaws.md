@@ -84,7 +84,7 @@ As adopted by the Foundation on 4 August 2025
 
          4. Remove Endorsed Delegates if the Endorsed Delegates do not comply with their obligations and responsibilities under Section 3.3 below.
 
-         5. Subject to these Bylaws, Foundation Articles and applicable laws and regulations, modify [![][image1]](https://www.codecogs.com/eqnedit.php?latex=%5Ctext%7BNEAR%7D_%5Ctext%7BrewardsApy%7D#0) so that the rewards incentives are competitive in the market.
+         5. Subject to these Bylaws, Foundation Articles and applicable laws and regulations, modify NEAR_rewardsApy so that the rewards incentives are competitive in the market.
 
    3. **Endorsed Delegates**
       1. The provisions set out in the House of Stake Proposals and Voting Procedures, shall apply to the extent set out herein.
