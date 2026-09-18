@@ -4,6 +4,7 @@
     "./delegates-and-participants",
     "./screening-committee",
     "./security-council",
+    "./tla-registrar",
     "./responsibilities-and-scope"
   ]
 }
