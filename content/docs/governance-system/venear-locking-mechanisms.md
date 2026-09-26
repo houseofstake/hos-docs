@@ -43,3 +43,9 @@ _veNEAR premium and decay calculations for the locking mechanism_
 The veNEAR system is built on **stake-weighted and time-based principles**, balancing flexibility with meaningful participation in governance.
 It allows users to retain control over their assets while gradually earning influence within the NEAR ecosystem.
 The locking model is designed to avoid rigid commitments, while still rewarding long-term alignment and engagement.
+
+---
+
+### Need help?
+
+If you have any questions or need support with locking, staking, or voting, reach out to the House of Stake support team on Telegram: [@NEAR_HouseOfStake](https://t.me/NEAR_HouseOfStake).
